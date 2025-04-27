@@ -62,6 +62,25 @@
 - **FAST_LIO_Localization_QN**：[⌨[code详细注释]](https://github.com/YZH-bot/SLAM_NOTED/tree/master/FAST_LIO_Localization_QN)$~~~$[📖[Original Repository]](https://github.com/engcang/FAST-LIO-Localization-QN)
 - **总结分析**：
   - 这个库的思路和 `FAST_LIO_LOCALIZATION` 不完全一样，维护了历史关键帧，通过搜寻当前关键帧最近关联帧（意味着没有回环检测，就是欧式距离法），然后进行修正，不过都对 `fast-lio2` 本身没有改进，也只是低频估计和更新初始的 `map-to-odom` 的变换（没有实现 `rviz` 设置起点功能），将这个变换作用到 `fast-lio2` 的结果上。
+  
+  
+  
+  
+
+## BALM1
+
+- **BALM1**：[⌨[code详细注释]](https://github.com/YZH-bot/SLAM_NOTED/tree/master/BALM1)$~~~$[:star:[Original Repository]](https://github.com/hku-mars/BALM/blob/master/BALM-old/README.md)$~~~$[📖[Paper Arxiv]](https://arxiv.org/abs/2010.08215)
+- **总结分析**：
+  - 前端：LOAM的线面特征优化得到初始位姿；
+  - 后端：维护VoxelMap对滑窗内的Pose进行优化，里面包括：
+    - 地图的初步更新cut+recut；
+    - 待优化Voxel的选取；
+    - LM法进行滑窗位姿优化；
+    - 地图边缘化固定一些Poses和地图信息等等；
+  - 虽然是2020年的工作，还是很经典的一个LiDAR SLAM工作，值得一读。
+
+
 
 ## open_vins
 - **open_vins**：[working on]$~~~$[📖[Original Repository]](https://github.com/rpng/open_vins)
+
