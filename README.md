@@ -83,4 +83,6 @@
 
 ## open_vins
 - **open_vins**：[working on]$~~~$[📖[Original Repository]](https://github.com/rpng/open_vins)
-
+  - [紫薯萝卜解读](https://www.zhihu.com/people/mao-shu-yuan/posts)
+## misc
+- [SLAM_Lib](https://github.com/Jinqiang/SLAM_Lib)
